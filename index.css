@@ -150,7 +150,7 @@ body {
 ======================== */
 .btn {
   padding: 12px 25px;
-  background: linear-gradient(45deg, #42e695, #ff6ec4);
+  background: linear-gradient(135deg, var(--electric-blue), var(--neon-purple), var(--soft-pink));
   border-radius: 50px;
   color: white;
   text-decoration: none;
@@ -212,7 +212,9 @@ body {
 }
 
 .card {
-  background: linear-gradient(135deg, #42e695, #ff6ec4);
+  background: linear-gradient(145deg, #111133, #000000);
+  border: 1px solid var(--neon-purple);
+  box-shadow: 0 0 15px rgba(155, 81, 224, 0.3);
   padding: 40px 20px;
   width: 240px;
   border-radius: 15px;
@@ -225,10 +227,9 @@ body {
   align-items: center;
   transition: 0.3s;
 }
-
 .card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px #42e695;
+  box-shadow: 0 0 25px rgba(47, 128, 237, 0.6);
+  transform: translateY(-8px);
 }
 
 /* ========================
@@ -243,7 +244,7 @@ body {
 }
 
 .social-icons img {
-  width: 40px;
+  width:0px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -348,4 +349,5 @@ footer p {
     display: flex;
   }
 }
+
 
