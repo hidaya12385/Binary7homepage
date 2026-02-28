@@ -383,6 +383,15 @@ footer p {
     width: 90%;
   }
    }
+.social-icons img {
+  width: 40px !important;
+  height: 40px !important;
+  display: inline-block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  background: red !important;
+}
+
 
 
 
