@@ -141,8 +141,9 @@ body {
 
 .hero h3 {
   font-size: 2rem;
-  margin-bottom: 25px;
-  color: #fff;
+  color: var(--silver-white);
+  margin-top: 20px;
+  text-shadow: 0 0 10px rgba(214, 51, 255, 0.6);
 }
 
 /* ========================
@@ -349,5 +350,6 @@ footer p {
     display: flex;
   }
 }
+
 
 
