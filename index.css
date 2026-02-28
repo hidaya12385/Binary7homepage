@@ -105,14 +105,25 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: linear-gradient(45deg, #000000, #ffffff, #42e695, #ff6ec4);
+
+  background: linear-gradient(
+    135deg,
+    var(--black),
+    var(--deep-navy),
+    var(--electric-blue),
+    var(--neon-purple),
+    var(--soft-pink)
+  );
+
   background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
+  animation: gradientFlow 18s ease infinite;
 }
 
-@keyframes gradientBG {
+@keyframes gradientFlow {
   0% { background-position: 0% 50%; }
+  25% { background-position: 50% 50%; }
   50% { background-position: 100% 50%; }
+  75% { background-position: 50% 50%; }
   100% { background-position: 0% 50%; }
 }
 
@@ -337,3 +348,4 @@ footer p {
     display: flex;
   }
 }
+
