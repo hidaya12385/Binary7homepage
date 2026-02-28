@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
   const hero = document.querySelector('.hero');
 
   // Background color animation
-  const colors = ['#111133', '#2f80ed', '#ff6ec4', '#9b51e0', '#ffffff']; // black, blue, pink, purple, white
+  const colors = ['#111133', '#2f80ed', '#ff6ec4', '#9b51e0', '#ffffff']; // your logo colors
   let colorIndex = 0;
   setInterval(() => {
     hero.style.background = colors[colorIndex];
@@ -49,3 +49,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
