@@ -350,6 +350,10 @@ footer p {
     display: flex;
   }
 }
+#contact {
+  background: #0f0f2e;
+  padding: 80px 20px;
+}
 
 
 
