@@ -28,3 +28,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+const hero = document.querySelector('.hero');
+
+const colors = ['#111133', '#2f80ed', '#ff6ec4', '#9b51e0', '#42e695']; // your brand colors
+let i = 0;
+
+function changeHeroColor() {
+  hero.style.background = colors[i];
+  i = (i + 1) % colors.length;
+}
+
+setInterval(changeHeroColor, 3000); // change every 3 seconds
+
