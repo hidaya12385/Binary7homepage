@@ -1,3 +1,6 @@
+// =======================
+// HAMBURGER MENU
+// =======================
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.querySelector(".nav-links");
 
@@ -6,19 +9,37 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
 });
 
-const mottoText = "Code it. Fix it. Slay it.";
-let i = 0;
+// =======================
+// HERO BACKGROUND & MOTTO
+// =======================
+window.addEventListener("load", () => {
+  const hero = document.querySelector('.hero');
 
-function typeMotto() {
-  if (i < mottoText.length) {
-    document.getElementById("motto").innerHTML += mottoText.charAt(i);
-    i++;
-    setTimeout(typeMotto, 100);
+  // Background color animation
+  const colors = ['#111133', '#2f80ed', '#ff6ec4', '#9b51e0', '#ffffff']; // black, blue, pink, purple, white
+  let colorIndex = 0;
+  setInterval(() => {
+    hero.style.background = colors[colorIndex];
+    colorIndex = (colorIndex + 1) % colors.length;
+  }, 3000);
+
+  // Motto typing effect
+  const mottoText = "Code it. Fix it. Slay it.";
+  let i = 0;
+  function typeMotto() {
+    const mottoEl = document.getElementById("motto");
+    if (mottoEl && i < mottoText.length) {
+      mottoEl.innerHTML += mottoText.charAt(i);
+      i++;
+      setTimeout(typeMotto, 100);
+    }
   }
-}
+  typeMotto();
+});
 
-window.addEventListener("load", typeMotto);
-
+// =======================
+// SMOOTH SCROLL
+// =======================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -28,15 +49,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-const hero = document.querySelector('.hero');
-
-const colors = ['#111133', '#2f80ed', '#ff6ec4', '#9b51e0', '#42e695']; // your brand colors
-let i = 0;
-
-function changeHeroColor() {
-  hero.style.background = colors[i];
-  i = (i + 1) % colors.length;
-}
-
-setInterval(changeHeroColor, 3000); // change every 3 seconds
-
