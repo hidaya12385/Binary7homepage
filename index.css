@@ -33,6 +33,7 @@ body {
 
 body {
   margin: 0;
+  padding-top: 80px; /* prevents content hiding under navbar */
 }
 
 /* NAVBAR CONTAINER */
@@ -406,6 +407,7 @@ footer p {
     display: flex;
   }
 }
+
 
 
 
