@@ -37,20 +37,21 @@ body {
 
 /* NAVBAR CONTAINER */
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 15px 18px 15px 8px; /* less left padding to shift logo */
+  padding: 15px 12px 15px 6px; /* logo shifted left */
 
   background: linear-gradient(90deg, #0d0d2b, #111144);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
 }
-
 /* LOGO SECTION */
 .logo {
   display: flex;
@@ -405,6 +406,7 @@ footer p {
     display: flex;
   }
 }
+
 
 
 
